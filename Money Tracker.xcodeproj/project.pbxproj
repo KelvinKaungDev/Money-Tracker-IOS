@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		399AE2252A4ADFA200A28B96 /* IncomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399AE2242A4ADFA100A28B96 /* IncomeCategory.swift */; };
 		39B65F912A4AA75500D8D078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65F902A4AA75500D8D078 /* AppDelegate.swift */; };
 		39B65F932A4AA75500D8D078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65F922A4AA75500D8D078 /* SceneDelegate.swift */; };
 		39B65F952A4AA75500D8D078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65F942A4AA75500D8D078 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 		39B65FAB2A4AA75600D8D078 /* Money_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65FAA2A4AA75600D8D078 /* Money_TrackerTests.swift */; };
 		39B65FB52A4AA75600D8D078 /* Money_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65FB42A4AA75600D8D078 /* Money_TrackerUITests.swift */; };
 		39B65FB72A4AA75600D8D078 /* Money_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65FB62A4AA75600D8D078 /* Money_TrackerUITestsLaunchTests.swift */; };
+		39B65FC62A4ABDD900D8D078 /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65FC52A4ABDD900D8D078 /* ExpenseCategory.swift */; };
+		39B65FC92A4AC74200D8D078 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B65FC82A4AC74200D8D078 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		399AE2242A4ADFA100A28B96 /* IncomeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCategory.swift; sourceTree = "<group>"; };
 		39B65F8D2A4AA75500D8D078 /* Money Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B65F902A4AA75500D8D078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B65F922A4AA75500D8D078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		39B65FB02A4AA75600D8D078 /* Money TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B65FB42A4AA75600D8D078 /* Money_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_TrackerUITests.swift; sourceTree = "<group>"; };
 		39B65FB62A4AA75600D8D078 /* Money_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39B65FC52A4ABDD900D8D078 /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		39B65FC82A4AC74200D8D078 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		399AE2232A4ADF8D00A28B96 /* Incomes */ = {
+			isa = PBXGroup;
+			children = (
+				399AE2242A4ADFA100A28B96 /* IncomeCategory.swift */,
+			);
+			path = Incomes;
+			sourceTree = "<group>";
+		};
 		39B65F842A4AA75500D8D078 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +117,11 @@
 			children = (
 				39B65F902A4AA75500D8D078 /* AppDelegate.swift */,
 				39B65F922A4AA75500D8D078 /* SceneDelegate.swift */,
-				39B65F942A4AA75500D8D078 /* ViewController.swift */,
-				39B65F962A4AA75500D8D078 /* Main.storyboard */,
+				39B65FC42A4AA7AE00D8D078 /* View */,
+				39B65FC32A4AA79700D8D078 /* Model */,
 				39B65F9C2A4AA75600D8D078 /* Assets.xcassets */,
 				39B65F9E2A4AA75600D8D078 /* LaunchScreen.storyboard */,
 				39B65FA12A4AA75600D8D078 /* Info.plist */,
-				39B65F992A4AA75500D8D078 /* Money_Tracker.xcdatamodeld */,
 			);
 			path = "Money Tracker";
 			sourceTree = "<group>";
@@ -128,6 +141,34 @@
 				39B65FB62A4AA75600D8D078 /* Money_TrackerUITestsLaunchTests.swift */,
 			);
 			path = "Money TrackerUITests";
+			sourceTree = "<group>";
+		};
+		39B65FC32A4AA79700D8D078 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39B65F992A4AA75500D8D078 /* Money_Tracker.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39B65FC42A4AA7AE00D8D078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39B65F962A4AA75500D8D078 /* Main.storyboard */,
+				39B65F942A4AA75500D8D078 /* ViewController.swift */,
+				39B65FC82A4AC74200D8D078 /* Constant.swift */,
+				399AE2232A4ADF8D00A28B96 /* Incomes */,
+				39B65FC72A4AC6EA00D8D078 /* Expenses */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39B65FC72A4AC6EA00D8D078 /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				39B65FC52A4ABDD900D8D078 /* ExpenseCategory.swift */,
+			);
+			path = Expenses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B65FC62A4ABDD900D8D078 /* ExpenseCategory.swift in Sources */,
 				39B65F952A4AA75500D8D078 /* ViewController.swift in Sources */,
 				39B65F9B2A4AA75500D8D078 /* Money_Tracker.xcdatamodeld in Sources */,
+				399AE2252A4ADFA200A28B96 /* IncomeCategory.swift in Sources */,
 				39B65F912A4AA75500D8D078 /* AppDelegate.swift in Sources */,
 				39B65F932A4AA75500D8D078 /* SceneDelegate.swift in Sources */,
+				39B65FC92A4AC74200D8D078 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
